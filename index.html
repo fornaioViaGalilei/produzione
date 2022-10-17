@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Costi di produzione</title>
+</head>
+
+<body>
+    <b> Se si usa safari utilizzare il punto al posto della virgola per i decimali. Ad esempio 0.65 invece di 0,65</b>
+    <div href="inputs" style="display: flex; justify-content: center; flex-direction: column;">
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                costo totale annuo materie prime
+                <input type="number" class="input" name="" id="materiePrime">
+                <br>
+            </div>
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                mensile
+                <input type="number" class="input" name="" id="materiePrimeM">
+                <br>
+            </div>
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                giornaliero
+                <input type="number" class="input" name="" id="materiePrimeG">
+                <br>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                costo totale annuo energia
+                <input type="number" class="input" name="" id="energia">
+                <br>
+            </div>
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                mensile
+                <input type="number" class="input" name="" id="energiaM">
+                <br>
+            </div>
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                giornaliero
+                <input type="number" class="input" name="" id="energiaG">
+                <br>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                costo totale annuo personale
+                <input type="number" class="input" name="" id="personale">
+                <br>
+            </div>
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                mensile
+                <input type="number" class="input" name="" id="personaleM">
+                <br>
+            </div>
+            <div style="display: flex; justify-content: center; flex-direction: column; margin-right: 20px;">
+                giornaliero
+                <input type="number" class="input" name="" id="personaleG">
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+    przzo medio stimato di acquisto farina al KG
+    <input type="number" class="input" name="" id="farina">
+    <br>
+
+    costo gasolio e manutenzione furgoni
+    <input type="number" class="input" name="" id="gasolio">
+    <br>
+
+    costo manutenzione laboratorio annuo
+    <input type="number" class="input" name="" id="laboratorio">
+    <br>
+
+    assicurazione furgoni
+    <input type="number" class="input" name="" id="assicurazione">
+    <br>
+
+    <button onclick="calcola()">Calcola</button>
+
+    <div>
+        totale KG pane prodotto anno: <input id="totaleKg"></input>
+    </div>
+    <div>
+        costo medio di 1Kg di pane alla produzione: <input id="costomedio"></input>
+    </div>
+    <div>
+        costo consegna al Kg: <input id="consegna"></input>
+    </div>
+    <div>
+        prezzo di vendita ingrosso consigliato in loco: <input id="ingrossoLoco"></input>
+    </div>
+    <div>
+        prezzo di vendita ingrosso consigliato con consegna: <input id="ingrossoVendita"></input>
+    </div>
+    <div>
+        prezzo di vendita in negozio consigliato: <input id="negozio"></input>
+    </div>
+    </div>
+</body>
+
+</html>
