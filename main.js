@@ -33,9 +33,9 @@ function costoConsegna() {
   document.getElementById("consegna").value = costoConsegna;
 }
 function ingrossoLoco() {
-  let paneProdotto = parseFloat(document.getElementById("totaleKg").value);
+  //let paneProdotto = parseFloat(document.getElementById("totaleKg").value);
   let costoMedio = parseFloat(document.getElementById("costomedio").value);
-  let ingrossoLoco = paneProdotto * 1.8 + costoMedio;
+  let ingrossoLoco = costoMedio * 1.8;
   ingrossoLoco = Math.round((ingrossoLoco + Number.EPSILON) * 100) / 100;
 
   document.getElementById("ingrossoLoco").value = ingrossoLoco;
